@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.7px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background:url(./Images/background-image1.jpg);
+    background-repeat: no-repeat; 
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    height: 500px;    
+}
+/***** Navigation bar *****/ 
+
+.navigation{
+    margin-top: 5px;   
+    width: 100%;
+    height:10vh;
+    text-align: center;
+    padding: 1px 40px;    
+}
+.logo{
+    margin-left: -20px;
+    width: 18%;
+    filter:invert();
+    mix-blend-mode:screen ;
+    float: left;
+}
+ul{    
+    
+    display:inline-flex;
+    gap: 100px;
+    list-style: none;
+    text-align: center;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-left: -18%;
+}
+li a{
+    font-size: 15px;
+    font-weight:500;
+    text-decoration: none;
+    position: relative;
+    color: #ffffff;
+}
+li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+    transform: scale(0);
+    transform-origin: center;
+    
+}
+
+li a:hover::after {
+    transform: scale(1);
+}
+
+p{
+    color:#ffff;
+    float:right;
+    margin: -35px 12px 0px 0px ;  
+}
+p>button{
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    padding:10px 20px;
+    border: none;
+    outline: none;
+    background-color:#ff6600;
+    
+}
+p>button:hover{
+    cursor: pointer;
+    outline:1px solid#ffff;
+    background: transparent;
+}
+ /***** Navigation bar Section *****/
+ 
+ /***** landing page *****/ 
+ .land{
+
+    height: 50ch;
+    padding: 5px;
+    display: flex;
+    margin:3% 2% 2% 2%;       
+ }
+ .land>.col-1>h1{
+    text-align: left;
+    color: #f8f8f8;
+    font-size:65px;
+    margin: 15% 0% 0% 7%;
+    line-height: 90px;    
+ }
+ .col-1{
+    width: 60%;
+ }
+.col-1>h1>span{
+    margin: 6% 0% 0% 1%;
+    color: rgb(255, 123, 0);
+    font-weight:bolder;
+    text-shadow: 1px 1px 5px #e78b40;
+ }
+ .col-2{ 
+    width: 40%;
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+ }
+.col-2>h3{
+    margin: 15% 0% 0% 0%;
+    font-weight:bolder;
+ }
+ .col-2>h3>.fa-clock,.fa-location-dot{ 
+    margin-right:20px;
+ }
+
+.col-2>button{
+    color: #ffff;
+    border: none;
+    outline: 1px solid #ffff;
+    font-size: 16px;
+    margin: 18% 0% 0% 0%;
+    padding:10px 20px;
+    background: transparent;
+} 
+.col-2>button:hover{
+    cursor: pointer;
+    color: #ffffff;
+    outline: 2px solid #ffff;
+} 
+
+  /***** landing page  End*****/
+ 
