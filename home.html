@@ -13,17 +13,20 @@
 <body id="home">
      <!-----------------------navigation bar---------------------------->
     <div class="navigation">
-        <a href="#home"><img src="./Images/Restaurant name logo.png" class="logo"></a>
+        <img src="./Images/Restaurant name logo.png" class="logo">
         <nav>
-            <ul>
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#header">ABOUT US</a></li>
-                <li><a href="#header">MENU</a></li>
-                <li><a href="#header">CONTACT</a></li>
-            </ul>        
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="closemenu()">Home</a></li>
+                <li> <a href="#about" onclick="closemenu()">About</a> </li>
+                <li><a href="#services" onclick="closemenu()">Menu</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()" id="Xsolid"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="homebar" onclick="openmenu()"></i>
         </nav>
-         <p><button>FIND A TABLE</button></p>
+        <p><button>FIND A TABLE</button></p>
     </div>
+    <!-----------------------Welcome content---------------------------->
     <div class="land">
         <div class="col-1">
             <h1>Taste Georgian <br>cuisine together<br> With<span> Sliver Spoons</span></h1>
@@ -34,5 +37,18 @@
             <button>View Menu</button>
         </div>
     </div>
+    <script>
+       
+        /*----------------------sidemenu----------------------------*/
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
