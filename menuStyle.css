@@ -171,8 +171,8 @@
       font-size: 16px;        
   }
   .menu-dish-card{    
-    flex: 3 48%;
-    height: 28ch;
+    flex: 3 38%;
+    height: 22ch;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
   }
@@ -182,15 +182,15 @@
     font-weight: 600;
     height:6ch;        
     text-align: left;
-    margin: 3px 4px 0px 4px;
-    padding:5px 10px 0px 10px;
+    margin: 4px 4px 0px 4px;
+    padding:2px 10px 0px 10px;
   }
   .menu-dish-info>p>span{
-    font-size: 16px;   
+    font-size: 14px;   
   }
   .dish-star-rate{
-    font-size: 13px; 
-    margin: -14px 0px 0px 110px;
+    font-size: 10px; 
+    margin: -14px 0px 0px 65px;
      
   }
 
