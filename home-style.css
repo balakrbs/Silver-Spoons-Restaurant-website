@@ -154,7 +154,7 @@ nav .fa-solid {
 
 /***** landing page  End*****/
 /***** Responsive container-1*****/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
     .logo {
         margin-left: -42px;
         margin-top: 5px;

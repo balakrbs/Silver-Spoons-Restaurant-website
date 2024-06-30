@@ -5,14 +5,6 @@
     background-color: rgb(46, 46, 46);    
 }
 
-
-.menu-navigation{
-    flex-basis: 60%;
-    text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 .menu-subtitle {
     text-align: center;
     font-size: 40px;
@@ -59,7 +51,8 @@
     display: none;
     padding:20px;
     margin-top: -10px;
-    margin-left: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .menu-tab-contents.active-tab {
@@ -98,7 +91,8 @@
     margin: 10px 0px 0px 0px;
   }
   .menu-dish-info>p>span{
-    font-size: 15px;   
+    font-size: 15px;
+    /* white-space: nowrap;      */
   }
   .dish-star-rate{
     position: absolute;
@@ -111,7 +105,7 @@
     color: rgb(129, 129, 129);
   }
 /***** Responsive container-1*****/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
 
   .menu-subtitle {
       font-size: 33px;
@@ -171,6 +165,10 @@
       margin-left: 15px;
       font-size: 16px;        
   }
+  .menu-tab-contents {    
+      padding:0px;
+      margin-top:25px;
+  }
   .menu-dish-card{    
     flex: 3 32%;
     height: 20ch;
@@ -179,7 +177,7 @@
   }
   .menu-dish-info{    
     position: relative;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     height:6ch;        
     text-align: left;
@@ -187,10 +185,11 @@
     padding:2px 10px 0px 10px;
   }
   .menu-dish-info>p>span{
-    font-size: 14px;
+    font-size: 11px;
     /* white-space: nowrap;    */
   }
   .dish-star-rate{
+    /* position: absolute; */
     font-size: 10px; 
     margin: -14px 0px 0px 50px;
      
