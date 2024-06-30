@@ -29,7 +29,7 @@ body{
 
 nav {
     display: flex;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-top: 1%;
 }
 
@@ -39,6 +39,7 @@ nav {
     filter:invert();
     mix-blend-mode:screen ;
     float: left;
+    cursor: pointer;
 }
 
 nav ul li {
@@ -76,23 +77,22 @@ nav .fa-solid {
     display: none;
 }
 
-p{
+.btn-menu{
     color:#ffff;
     float:right;
     margin: -37px 12px 0px 0px ;  
 }
-p>button{
+.btn-menu>button{
     text-align: center;
     border-radius: 5px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 12px;
     padding:10px 20px;
     border: none;
     outline: none;
     background-color:#ff6600;
-    
 }
-p>button:hover{
+.btn-menu>button:hover{
     cursor: pointer;
     outline:1px solid#ffff;
     background: transparent;
@@ -101,21 +101,21 @@ p>button:hover{
  
  /***** landing page *****/ 
  .land{
-
     height: 50ch;
     padding: 5px;
     display: flex;
-    margin:3% 2% 2% 2%;       
+    margin:1% 2% 2% 2%;      
+ }
+ 
+ .col-1{
+    width: 60%;
  }
  .land>.col-1>h1{
     text-align: left;
     color: #f8f8f8;
     font-size:65px;
-    margin: 15% 0% 0% 7%;
+    margin: 14% 0% 0% 7%;
     line-height: 90px;    
- }
- .col-1{
-    width: 60%;
  }
 .col-1>h1>span{
     margin: 6% 0% 0% 1%;
@@ -130,7 +130,7 @@ p>button:hover{
     text-align: center;
  }
 .col-2>h3{
-    margin: 15% 0% 0% 0%;
+    margin: 16% 0% 0% 0%;
     font-weight:bolder;
  }
  .col-2>h3>.fa-clock,.fa-location-dot{ 
@@ -141,8 +141,8 @@ p>button:hover{
     color: #ffff;
     border: none;
     outline: 1px solid #ffff;
-    font-size: 16px;
-    margin: 18% 0% 0% 0%;
+    font-size: 18px;
+    margin: 20% 0% 0% 0%;
     padding:10px 20px;
     background: transparent;
 } 
@@ -248,23 +248,23 @@ p>button:hover{
         cursor: pointer;
     }
     
-    p{
+    .btn-menu{
         color:#ffff;
         position: absolute;
         margin: 90px 0px 0px 90px ;  
     }
-    p>button{
+    .btn-menu>button{
         text-align: center;
         border-radius: 5px;
         color: #ffffff;
-        font-size: 16px;
+        font-size: 12px;
         padding:10px 20px;
         border: none;
         outline: none;
         background-color:#ff6600;
         
     }
-    p>button:hover{
+    .btn-menu>button:hover{
         cursor: pointer;
         outline:1px solid#ffff;
         background: transparent;

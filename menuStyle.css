@@ -1,0 +1,120 @@
+
+#View-menu {
+    padding: 0px 20px;
+    color: #000000;
+    background-color: rgb(46, 46, 46);    
+}
+
+
+.menu-navigation{
+    flex-basis: 60%;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu-subtitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding-top: 50px;
+}
+
+.menu-tab-tittles {
+    display: flex;
+    padding-top:0px;
+    margin: 3% 5% 2% 9%;
+}
+
+.menu-tab-links {
+    margin-right: 21px;
+    margin-left: 21px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;    
+}
+
+.menu-tab-links::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu-tab-links.active-link::after {
+    width: 100%;
+}
+
+
+.menu-tab-contents {
+    display: none;
+    padding:20px;
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+.menu-tab-contents.active-tab {
+    display: block;
+}
+
+.menu-menus{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap: 20px 10px;    
+}
+.menu-dish-card{    
+    flex: 0 1 19%;
+    height: 30ch;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.menu-dish-image>img{   
+    width: 100%;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+  }
+  .menu-dish-info{
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    height:8ch;        
+    text-align: left;
+    margin: 3px 4px 0px 4px;
+    padding:10px 10px 0px 10px;
+  }
+  .menu-dish-info>.price{
+    margin: 10px 0px 0px 0px;
+  }
+  .menu-dish-info>p>span{
+    font-size: 15px;   
+  }
+  .dish-star-rate{
+    position: absolute;
+    margin: -15px 0px 0px 115px;
+    display: inline-flex;
+    color: #FFFF00;    
+  }
+  .dish-star-rate>p>span{   
+    color: rgb(129, 129, 129);
+  }
+/* @media only screen and (max-width: 600px) {
+
+.menu-con{
+    flex-direction: column;
+}
+.menu-card {
+    flex: 2 46%;
+  }
+
+} */

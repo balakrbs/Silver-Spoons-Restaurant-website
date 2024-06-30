@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="./home-style.css">
+    <link rel="stylesheet" href="./menuStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -17,14 +18,14 @@
         <nav>
             <ul id="sidemenu">
                 <li><a href="#header" onclick="closemenu()">Home</a></li>
-                <li> <a href="#about" onclick="closemenu()">About</a> </li>
+                <li><a href="#about" onclick="closemenu()">About</a> </li>
                 <li><a href="#services" onclick="closemenu()">Menu</a></li>
                 <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()" id="Xsolid"></i>
             </ul>
             <i class="fa-solid fa-bars" id="homebar" onclick="openmenu()"></i>
         </nav>
-        <p><button>FIND A TABLE</button></p>
+        <p class="btn-menu"><button>FIND A TABLE</button></p>
     </div>
     <!-----------------------Welcome content---------------------------->
     <div class="land">
@@ -36,10 +37,204 @@
             <h3><i class="fa-solid fa-location-dot"></i>Coimbatore, Tamil nadu </h3>
             <button>View Menu</button>
         </div>
-    </div>
+        </div>
+    <div>
+    <!-----------------------Menu contianer---------------------------->
+    <div id="View-menu"> 
+        <h1 class="menu-subtitle">You may like one of our dishes:</h1>               
+            <div class="menu-navigation">                                      
+                <div class="menu-tab-tittles">
+                    <p class="menu-tab-links active-link" onclick="opentab('pastas')">Pastas</p>
+                    <p class="menu-tab-links" onclick="opentab('experience')">Burgers</p>
+                    <p class="menu-tab-links" onclick="opentab('education')">Soups</p>
+                    <p class="menu-tab-links" onclick="opentab('education')">Salads</p>
+                    <p class="menu-tab-links" onclick="opentab('education')">Sandwich</p>
+                    <p class="menu-tab-links" onclick="opentab('education')">Cocktails & Lemonades</p>
+                    <p class="menu-tab-links" onclick="opentab('education')">Confectionery</p>
+                    <p class="menu-tab-links" onclick="opentab('education')">Soft drinks</p>
+                </div>
+                <div class="menu-tab-contents active-tab" id="pastas">
+                    <div class="menu-menus">
+                        <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Agnolini_mantovani.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Agnolini</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star-half"></i></p>
+                                        <p><span><i class="fa-regular fa-star"></i></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/white-sauce-pasta.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>White sauce pasta</span></p>
+                                        <p class="price">$129.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star-half"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Penne-Alfredo.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Penne Alfredo</span></p>
+                                        <p class="price">$159.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star-half"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Cottage-Cheese-Pasta-Sauce.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Cottage Cheese Pasta</span></p>
+                                        <p class="price">$29.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><span><i class="fa-regular fa-star"></i></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Pink-Sauce-Pasta.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Pink Sauce Pasta</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star-half"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/saucy-pasta-with-mushrooms.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Mushrooms saucy pasta</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star-half"></i></p>
+                                        <p><span><i class="fa-regular fa-star"></i></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Lentil-Pasta-Sauce.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Lentil-Pasta-Sauce</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><span><i class="fa-regular fa-star"></i></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Creamy-Pasta-with-Bacon-and-Peas.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Bacon & Peas Cream Pasta</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Chicken-Broccoli-Pasta.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Bacon & Peas Cream Pasta</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-dish-card">
+                                <div class="menu-dish-image">
+                                    <img src="./Images/menu-images/Vegetable-Pasta-Recipe.png">
+                                </div>
+                                <div class="menu-dish-info">
+                                        <p><span>Bacon & Peas Cream Pasta</span></p>
+                                        <p class="price">$99.99</p>
+                                    <div class="dish-star-rate">
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                        <p><i class="fa-solid fa-star"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-tab-contents " id="experience">
+                    <ul>
+                        <li><span>FRESHER</span><br></li>
+                    </ul>
+                </div>
+                <div class="menu-tab-contents" id="education">
+                    <ul>
+                        <li><span>SSLC</span><br>56.4%</li>
+                        <li><span>HSC</span><br>73.6%</li>
+                        <li><span>BE-CSE</span><br>7.8 (CGPA)</li>
+                        <li><span>COURSES</span><br>programming in Java, Android app development</li>
+                    </ul>
+                </div>
+            </div>
+       </div>
     <script>
-       
-        /*----------------------sidemenu----------------------------*/
+        /*----------------------side-nagivation----------------------------*/
         var sidemeu = document.getElementById("sidemenu");
 
         function openmenu() {
@@ -48,6 +243,19 @@
 
         function closemenu() {
             sidemeu.style.right = "-200px";
+        }
+         /*----------------------menu----------------------------*/
+         var tablinks = document.getElementsByClassName(" menu-tab-links");
+        var tabcontents = document.getElementsByClassName("menu-tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
 </body>
