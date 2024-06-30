@@ -86,7 +86,7 @@ nav .fa-solid {
     text-align: center;
     border-radius: 5px;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     padding:10px 20px;
     border: none;
     outline: none;
@@ -153,8 +153,63 @@ nav .fa-solid {
 } 
 
 /***** landing page  End*****/
- 
-/***** Responsive container*****/
+/***** Responsive container-1*****/
+@media only screen and (max-width: 950px) {
+    .logo {
+        margin-left: -42px;
+        margin-top: 5px;
+        width: 26%;        
+    }
+    
+    nav {
+        margin-top: 24px;      
+        margin-left: 20px;      
+        padding: 5px 50px;
+        
+    }
+    nav ul li {
+          margin: 0px 30px;
+    }
+    
+    nav ul li a {        
+        font-size: 16px;        
+    }
+    .btn-menu{ 
+        margin: -30px 0px 0px 0px ;  
+    }
+    .btn-menu>button{       
+        font-size: 12px;
+        padding:8px 15px;
+    }
+    .land{
+        height: 42ch; 
+     }
+     
+     .col-1{
+        width: 60%;
+     }
+     .land>.col-1>h1{
+        font-size:42px;
+        margin: 12% 0% 0% 7%;           
+     }
+    
+     .col-2{       
+        font-size: 18px;
+        
+     }
+    .col-2>h3{
+        margin: 22% 0% 0% 0%;
+     }
+     .col-2>h3>.fa-clock,.fa-location-dot{ 
+        margin-right:18px;
+     }
+    
+    .col-2>button{
+        font-size: 16px;       
+    }     
+}
+/***** Responsive container-1 End*****/
+/***** Responsive container-2*****/
 @media only screen and (max-width: 600px) {
     body{
         background:url(./Images/background-image-vertical.jpg);
@@ -167,56 +222,61 @@ nav .fa-solid {
     .logo {
         margin-left: -42px;
         margin-top: 5px;
-        width: 70%;
+        width: 50%;
         filter: invert();
         mix-blend-mode: difference;
     }
     nav .fa-solid {
         display: block;
-        font-size: 33px;
+        font-size: 32px;
         margin-left: 5px;
         color: #ffff;
     }
     #Xsolid {
-        margin-top: -11%;
-        margin-left: 20%;
+        margin-top: -17%;
+        margin-left: 6%;
         margin-right: 80%;
+        font-size: 42px;
     }
     nav #homebar {
-        margin-left: 90%;
-        margin-top:8%;
-        color: #ffffff;
-        cursor: pointer;
+        margin-left: 85%;
+        margin-top:4%;
+        cursor: pointer;       
     }
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: absolute;
-        margin-top: -10px;
-        margin-left: -8%;
+        margin-top: -5px;
+        margin-left: -7%;
         width: 100%;
-        padding: 5px 50px;
+        padding: 0px 0px;
     }
     nav ul {
-        background:transparent ;
         position: fixed;
         top: 0;
         right: -200px;
-        width: 180px;
+        width: 120px;
         height: 50vh;
-        padding-top: 35px;
+        padding-top: 45px;
         z-index: 2;
         transition: 0.7s;
-        margin-top: 22px;
-        margin-left: 95px;
-        margin-right: 0px;
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 38px;
         text-align: center;
+        
        
     }
     nav ul li {
+        font-size: 4px;
         display: block;
-        margin: 25px;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
     }
     nav ul li a::after {
         content: '';
@@ -251,25 +311,13 @@ nav .fa-solid {
     .btn-menu{
         color:#ffff;
         position: absolute;
-        margin: 90px 0px 0px 90px ;  
+        margin: 90px 0px 0px 20% ;  
     }
     .btn-menu>button{
-        text-align: center;
-        border-radius: 5px;
-        color: #ffffff;
-        font-size: 12px;
-        padding:10px 20px;
-        border: none;
-        outline: none;
-        background-color:#ff6600;
-        
+        font-size: 15px;
+        padding:10px 30px;
     }
-    .btn-menu>button:hover{
-        cursor: pointer;
-        outline:1px solid#ffff;
-        background: transparent;
-    }
-
+  
     .land{
         align-items: center;
         height: 47ch;
@@ -281,48 +329,28 @@ nav .fa-solid {
      .col-1{
         width:100%;
         padding:10px;
-     }
+     } 
      .land>.col-1>h1{
-        text-align: left;
-        color: #f8f8f8;
-        font-size:35px;
+        font-size:40px;
         margin: 1% 0% 0% 2%;
         line-height: 70px;    
      }
-    .col-1>h1>span{
-        margin: 6% 0% 0% 1%;
-        color: rgb(255, 123, 0);
-        font-weight:bolder;
-        text-shadow: 1px 1px 5px #e78b40;
-     }
-     .col-2{ 
+     .col-2{
         width:100%;
-        padding:25px 5px;
-        color: #ffff;
-        font-size: 15px;
-        text-align: center; 
+        padding:4px 5px;
+        font-size: 16px;
      }
     .col-2>h3{
-        margin: 7% 0% 0% 0%;
-        font-weight:bolder;
+        margin: 6% 0% 3% 0%;
+        
      }
      .col-2>h3>.fa-clock,.fa-location-dot{ 
         margin-right:20px;
      }
     
     .col-2>button{
-        color: #ffff;
-        border: none;
-        outline: 1px solid #ffff;
-        font-size: 16px;
-        margin: 12% 0% 0% 0%;
-        padding:10px 20px;
-        background: transparent;
-    } 
-    .col-2>button:hover{
-        cursor: pointer;
-        color: #ffffff;
-        outline: 2px solid #ffff;
+        font-size: 18px;
+        margin: 8% 0% 2.5% 0%;
     } 
   }
- /***** Responsive container End *****/
+ /***** Responsive container-2 End *****/

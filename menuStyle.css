@@ -29,6 +29,7 @@
 }
 
 .menu-tab-links {
+  white-space: nowrap;
     margin-right: 21px;
     margin-left: 21px;
     font-size: 16px;
@@ -101,6 +102,7 @@
   }
   .dish-star-rate{
     position: absolute;
+    font-size: 14px; 
     margin: -15px 0px 0px 115px;
     display: inline-flex;
     color: #FFFF00;    
@@ -108,13 +110,89 @@
   .dish-star-rate>p>span{   
     color: rgb(129, 129, 129);
   }
-/* @media only screen and (max-width: 600px) {
+/***** Responsive container-1*****/
+@media only screen and (max-width: 950px) {
 
-.menu-con{
-    flex-direction: column;
-}
-.menu-card {
-    flex: 2 46%;
+  .menu-subtitle {
+      font-size: 33px;
+  }
+  
+  .menu-tab-tittles {
+       margin: 3% 3% 2% 5%;
   }
 
-} */
+  .menu-tab-links {
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;       
+  }
+  .menu-menus{    
+    gap: 10px 9px;
+  }
+  .menu-dish-card{    
+    flex: 0 8 19%;
+    height: 21ch;
+  }
+  .menu-dish-info{
+    font-size: 12px;
+    height:6ch;
+    margin: 3px 4px 0px 4px;
+    padding:6px 0px 4px 0px;
+  }
+  .menu-dish-info>p>span{
+    font-size: 12px;   
+  }
+  .dish-star-rate{
+    margin: -14px 0px 0px 78px; 
+    font-size: 10px;  
+  }
+}
+/***** Responsive container-1 End*****/
+/***** Responsive container-2*****/
+@media only screen and (max-width: 600px) {
+  .menu-subtitle {
+    font-size: 28px;
+  }
+  .menu-subtitle {
+      font-size: 23px;
+  }
+  
+  .menu-tab-tittles {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin: 8% 0% 2% 0%;
+  }
+  
+  .menu-tab-links {    
+     white-space: nowrap;
+      margin-right: 15px;
+      margin-left: 15px;
+      font-size: 16px;        
+  }
+  .menu-dish-card{    
+    flex: 3 48%;
+    height: 28ch;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+  .menu-dish-info{
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    height:6ch;        
+    text-align: left;
+    margin: 3px 4px 0px 4px;
+    padding:5px 10px 0px 10px;
+  }
+  .menu-dish-info>p>span{
+    font-size: 16px;   
+  }
+  .dish-star-rate{
+    font-size: 13px; 
+    margin: -14px 0px 0px 110px;
+     
+  }
+
+}
+/***** Responsive container-2 End *****/
