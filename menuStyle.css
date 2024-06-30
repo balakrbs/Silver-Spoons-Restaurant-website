@@ -150,18 +150,19 @@
 }
 /***** Responsive container-1 End*****/
 /***** Responsive container-2*****/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .menu-subtitle {
     font-size: 28px;
   }
   .menu-subtitle {
-      font-size: 23px;
+      font-size: 24px;
+      line-height: 34px;
   }
   
   .menu-tab-tittles {
-      overflow-x: scroll;
-      overflow-y: hidden;
+      overflow: auto;
       margin: 8% 0% 2% 0%;
+      padding:20px 0px;
   }
   
   .menu-tab-links {    
@@ -171,12 +172,12 @@
       font-size: 16px;        
   }
   .menu-dish-card{    
-    flex: 3 38%;
-    height: 22ch;
+    flex: 3 32%;
+    height: 20ch;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
   }
-  .menu-dish-info{
+  .menu-dish-info{    
     position: relative;
     font-size: 12px;
     font-weight: 600;
@@ -186,11 +187,12 @@
     padding:2px 10px 0px 10px;
   }
   .menu-dish-info>p>span{
-    font-size: 14px;   
+    font-size: 14px;
+    /* white-space: nowrap;    */
   }
   .dish-star-rate{
     font-size: 10px; 
-    margin: -14px 0px 0px 65px;
+    margin: -14px 0px 0px 50px;
      
   }
 
