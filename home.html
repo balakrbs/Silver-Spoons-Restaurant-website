@@ -42,8 +42,8 @@
     <!-----------------------Menu contianer---------------------------->
     <div id="View-menu"> 
         <h1 class="menu-subtitle">You may like one of our Dishes:</h1>                                                     
-                <div>
-                <div>
+        <div>
+            <div>
                 <div class="menu-tab-tittles">
                     <p class="menu-tab-links active-link" onclick="opentab('pastas')">Pastas</p>
                     <p class="menu-tab-links" onclick="opentab('burgers')">Burgers</p>
@@ -221,9 +221,10 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-----------------------Menu cards for BURGERS---------------------------->
                 
-                <div class="menu-tab-contents active-tab" id="burgers">
+                <div class="menu-tab-contents" id="burgers">
                     <div class="menu-menus">
                         <div class="menu-dish-card">
                                 <div class="menu-dish-image">
@@ -327,7 +328,7 @@
                 </div>
                 <!-----------------------Menu cards for PIZZAS---------------------------->
                 
-                <div class="menu-tab-contents active-tab" id="pizzas">
+                <div class="menu-tab-contents" id="pizzas">
                     <div class="menu-menus">
                         <div class="menu-dish-card">
                                 <div class="menu-dish-image">
@@ -413,7 +414,8 @@
                     </div>
                 </div>
             </div>                
-         </div>
+        </div>
+    </div>
     <script>
         /*----------------------side-nagivation----------------------------*/
         var sidemeu = document.getElementById("sidemenu");
@@ -426,7 +428,7 @@
             sidemeu.style.right = "-200px";
         }
          /*----------------------menu----------------------------*/
-         var tablinks = document.getElementsByClassName(" menu-tab-links");
+        var tablinks = document.getElementsByClassName(" menu-tab-links");
         var tabcontents = document.getElementsByClassName("menu-tab-contents");
         function opentab(tabname) {
             for (tablink of tablinks) {
